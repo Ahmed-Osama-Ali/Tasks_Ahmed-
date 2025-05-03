@@ -1,0 +1,7 @@
+/* public/css/custom.css */
+.post-title:hover,
+.post-subtitle:hover {
+  color: #0085A1 !important;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out !important;
+}

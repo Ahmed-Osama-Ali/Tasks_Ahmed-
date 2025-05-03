@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Master</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap & Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body id="page-top">
+
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">Task Master</a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#tasks">Tasks</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Tasks-->
+  <header class="masthead text-white text-center" id="tasks">
+    <div class="container">
+      <h1 class="masthead-heading">Task Master</h1>
+      <p class="masthead-subheading">Organize, track & conquer your to-dos</p>
+
+      <!-- form -->
+      <form id="todo-form" class="input-group mx-auto mt-4" style="max-width: 600px;">
+        <input id="todo-input" type="text"
+               class="form-control"
+               placeholder="Enter a new task"
+               aria-label="New task"
+               required>
+        <button class="btn" type="submit">Add Task</button>
+      </form>
+
+      <!-- list -->
+      <ul id="todo-list" class="list-group mt-5 mx-auto" style="max-width: 600px;"></ul>
+    </div>
+  </header>
+
+  <!-- Scripts -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* ===== Base ===== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-top: 80px; /* مساحة للـ navbar الثابت */
+  }
+  
+  /* ===== Navbar ===== */
+  .navbar {
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .navbar .navbar-brand {
+    font-weight: 700;
+    color: #333333;
+  }
+  .navbar .nav-link {
+    color: #555555;
+    font-weight: 500;
+  }
+  .navbar .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* ===== Hero Section ===== */
+  .masthead {
+    /* من البنفسجي الغامق إلى الأزرق الهادئ */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    text-align: center;
+    color: #ffffff;
+    padding: 6rem 0;
+  }
+  
+  /* ===== Add-Task Button (matching the gradient) ===== */
+  #todo-form .btn {
+    border-radius: 0 50px 50px 0;
+    /* خلي الزر بنفس الألوان لكن ثابت */
+    background-color: #2575fc;
+    color: #ffffff;
+    border: none;
+    padding: 0 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* ===== (اختياري) Hover للزر ===== */
+  #todo-form .btn:hover {
+    background-color: #6a11cb;
+  }
+  
+  /* ===== Task Items ===== */
+  .list-group-item {
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .list-group-item.done {
+    background: #e9f7ef;
+  }
+  .list-group-item .btn {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+  }
+  
+  /* إزالة جميع الحركات */
+  * {
+    transition: none !important;
+  }
+  

@@ -1,0 +1,39 @@
+<%- include('partials/header', { title: 'Employee List' }) %>
+
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h5 class="mb-0">Employee List</h5>
+    <a href="/new" class="btn btn-success">+ Add Employee</a>
+  </div>
+  <div class="card-body p-0">
+    <table class="table table-striped table-hover mb-0">
+      <thead class="table-primary">
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Salary</th>
+          <th>Address</th>
+          <th style="width: 160px;">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% employees.forEach(emp => { %>
+          <tr>
+            <td><%= emp.name %></td>
+            <td><%= emp.gender %></td>
+            <td>$<%= emp.salary %></td>
+            <td><%= emp.address %></td>
+            <td>
+              <a href="/edit/<%= emp._id %>" class="btn btn-sm btn-outline-warning">Edit</a>
+              <form action="/delete/<%= emp._id %>?_method=DELETE" method="POST" class="d-inline">
+                <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+              </form>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
